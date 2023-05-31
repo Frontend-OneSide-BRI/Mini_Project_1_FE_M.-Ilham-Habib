@@ -16,61 +16,55 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <span class="navbar-toggler">Brand Name</span> <!-- Get the hide/apper effect but without the style -->
-            <!-- Left Element -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContentt">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Left</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Left</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Left</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Left Element -->
-            <!-- Center Element -->
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto text-black">
-                    <li>Center</li>
-                </ul>
-            </div>
-            <!-- End Center Element -->
-            <!-- Right Element -->
-            <div class="collapse navbar-collapse text-black" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li>Right</li>
-                </ul>
-            </div>
-            <!-- End Right Element -->
-        </div>
-    </nav>
-   <section class="hero mb-3">
-        <div class="section-trivia">
-            <h1 class="title-trivia mb-3">Discover With <span class="title-trivia-trivia">Us</span></h1>
-                <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" id="searchButton">Search</button>
-                </div>
-        </div>
-   </section>
-
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <span class="navbar-toggler"><h5>Gallery Of <span> Art</span></h5></span> <!-- Get the hide/apper effect but without the style -->
+          <!-- Left Element -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContentt">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/homepage.html">Mini Project 1</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- End Left Element -->
+          <!-- Center Element -->
+          <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto text-secondary">
+                  <li><h5>Gallery Of <span> Art</span></h5></li>
+              </ul>
+          </div>
+          <!-- End Center Element -->
+          <!-- Right Element -->
+          <div class="collapse navbar-collapse text-black" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li>May 31, 2023</li>
+              </ul>
+          </div>
+          <!-- End Right Element -->
+      </div>
+  </nav>
+  <header>
+    <div class="hero mb-3">
+      <div class="section-trivia">
+          <h1 class="title-trivia mb-3">Discover With <span class="title-trivia-trivia">Us</span></h1>
+              <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" id="searchButton">Search</button>
+              </div>
+      </div>
+ </div>
+  </header>
+  
+  <!-- Filter Kategori -->
    <section class="category">
       <div class="category-content">
-        <button class="btn btn-value" onclick="filterProduct('all')"><h4>Semua Category</h4></button> 
-        <button class="btn btn-value" onclick="filterProduct('music')"><h4>Music</h4></button>
-        <button class="btn btn-value" onclick="filterProduct('building')"><h4>Building</h4></button>
-        <button class="btn btn-value" onclick="filterProduct('sport')"><h4>Sport</h4></button>
+        <div class="btn btn-value" onclick="filterProduct('all')"><h4>Semua Category</h4></div> 
+        <div class="btn btn-value" onclick="filterProduct('music')"><h4>Music</h4></div>
+        <div class="btn btn-value" onclick="filterProduct('building')"><h4>Building</h4></div>
+        <div class="btn btn-value" onclick="filterProduct('sport')"><h4>Sport</h4></div>
       </div>
    </section>
 

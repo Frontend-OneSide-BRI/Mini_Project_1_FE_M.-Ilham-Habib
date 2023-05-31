@@ -168,6 +168,15 @@ body {
 .container-fluid.container-galery .column img:hover {
   filter: grayscale(0);
 }
+#imageContainer {
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+#imageContainer:hover {
+  filter: grayscale(0);
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
