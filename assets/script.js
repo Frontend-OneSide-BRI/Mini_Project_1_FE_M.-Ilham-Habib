@@ -130,12 +130,8 @@ searchInput.addEventListener("keydown", function (event) {
 });
 
 function filterProduct(category) {
-  console.log(category);
   let filterData = data.filter((e) => e?.category?.toLowerCase() === category);
-  console.log(category);
-  console.log(filterData, "test");
   let dataDiv = document.getElementById("imageContainer");
-  console.log(dataDiv);
 
   dataDiv.innerHTML = "";
 
@@ -179,7 +175,6 @@ function performSearch() {
 
     // Hapus nilai input setelah pencarian selesai
     searchInput.value = "";
-    console.log(searchInput);
   });
 }
 
