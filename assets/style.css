@@ -22,6 +22,24 @@ body {
   /* overflow: hidden; */
 }
 
+/* Navbar */
+.text-secondary li h5 {
+  cursor: default;
+}
+.text-secondary li h5 span,
+.container-fluid span h5 span {
+  color: var(--lightPrimary);
+}
+
+.text-secondary li h5 span,
+.container-fluid span h5 span {
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid var(--lightPrimary);
+  /* Mengubah ukuran kecil banget */
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
 /* Hero */
 .hero {
   min-height: 70vh;
@@ -74,6 +92,11 @@ body {
   overflow: hidden;
   height: 50vh;
 }
+.category-music,
+.category-sport,
+.category-building {
+  padding: 5vh 0;
+}
 .category .category-content {
   display: flex;
   justify-content: space-evenly;
@@ -84,6 +107,29 @@ body {
   padding-bottom: 10px;
   text-decoration: none;
   color: var(--bg);
+}
+
+.category-building .container div a,
+.category-music .container div a,
+.category-sport .container div a {
+  text-decoration: none;
+  color: var(--bg);
+}
+
+.category .category-content a:hover {
+  color: var(--bg);
+}
+.category .category-content a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid var(--bg);
+  /* Mengubah ukuran kecil banget */
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.category .category-content a:hover::after {
+  transform: scaleX(0.5);
 }
 
 .category-music .row,
@@ -141,15 +187,19 @@ body {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+@media screen and (max-width: 1920px) {
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1028px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
   .category-music .column,
   .category-sport .column,
   .category-building .column {
@@ -160,5 +210,11 @@ body {
   .category-sport .column img,
   .category-building .column img {
     filter: grayscale(0) brightness(1);
+  }
+
+  .category-building .container div h2,
+  .category-music .container div h2,
+  .category-sport .container div h2 {
+    font-size: 1.3rem;
   }
 }

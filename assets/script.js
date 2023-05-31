@@ -1,4 +1,3 @@
-// Data dari variabel
 var data = [
   {
     id: 1,
